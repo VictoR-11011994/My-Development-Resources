@@ -9,7 +9,7 @@ GET localhost:8080/api/employee/details/1
 
 POST localhost:8080/api/employee/add
 
-Body > row > JSON
+Body > raw > JSON
 
 {
     "firstName": "John",
