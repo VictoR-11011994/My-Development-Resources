@@ -31,7 +31,7 @@ public class InMemoryEmployeeServiceImpl implements EmployeeService {
 ...then we need to call a Service in Controller, to decide the default Service we can do like this:
 
 @RestController
-@RequestMapping("/api/employee/")
+@RequestMapping("/api/employee")
 public class EmployeeController {
 	
 	@Autowired
