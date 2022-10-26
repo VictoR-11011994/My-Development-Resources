@@ -1,0 +1,45 @@
+Example: 1
+In case we have ...Service with multiple Services like:
+
+public interface EmployeeService {
+	
+	...
+}
+
+-------------------------------------------
+
+@Service
+@Qualifier("PrimaryEmployeeService")
+public class EmployeeServiceImpl implements EmployeeService {
+	
+ ...
+
+}
+
+-------------------------------------------
+
+@Service
+@Qualifier("SecondaryEmployeeService")
+public class InMemoryEmployeeServiceImpl implements EmployeeService {
+
+	...
+
+}
+
+-------------------------------------------
+
+...then we need to call a Service in Controller, to decide the default Service we can do like this:
+
+@RestController
+@RequestMapping("/api/employee/")
+public class EmployeeController {
+	
+	@Autowired
+	@Qualifier("PrimaryEmployeeService")
+	private EmployeeService employeeService;
+	
+	...
+
+}
+
+---------------------------------------------------------------------------------------------------------------------------------
