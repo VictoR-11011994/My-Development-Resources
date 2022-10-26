@@ -4,7 +4,6 @@ https://www.postman.com
 GET localhost:8080/api/employee/all
 
 
-
 GET localhost:8080/api/employee/details/1
 
 
