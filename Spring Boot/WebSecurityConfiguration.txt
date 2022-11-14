@@ -1,0 +1,10 @@
+package com.example.demo.security;
+
+//@Configuration
+@EnableWebSecurity // <-- this has already a: @Configuration ...so we don't need to specify it again.
+@EnableGlobalMethodSecurity(prePostEnabled = true)
+public class WebSecurityConfiguration {
+
+// ... extends WebSecurityConfigurerAdapter (Deprecated)
+
+}
