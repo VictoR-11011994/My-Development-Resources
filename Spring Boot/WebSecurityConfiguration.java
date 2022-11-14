@@ -6,7 +6,7 @@ package com.example.demo.security;
 public class WebSecurityConfiguration {
 
 // ... extends WebSecurityConfigurerAdapter (Deprecated)
-@Override
+        @Override
 	protected void configure(HttpSecurity http) throws Exception {
 		//default
 		//http.authorizeRequests().anyRequest().authenticated();
@@ -15,12 +15,12 @@ public class WebSecurityConfiguration {
 		
 		//customize
 		http.authorizeRequests()
-			  .antMatchers("/private1").authenticated()
-		    .antMatchers("/private2").authenticated()
-			  .antMatchers("/public1").permitAll()
-		    .antMatchers("/public2").permitAll()
-		    .and().formLogin() // Browser display default form login
-		    .and().httpBasic(); // Any other app like: Postman
+		.antMatchers("/private1").authenticated()
+		.antMatchers("/private2").authenticated()
+		.antMatchers("/public1").permitAll()
+		.antMatchers("/public2").permitAll()
+	    	.and().formLogin() // Browser display default form login
+	    	.and().httpBasic(); // Any other app like: Postman
 	}
 
 }
