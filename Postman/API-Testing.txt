@@ -6,7 +6,7 @@ GET localhost:8080/api/employee/all
 
 GET localhost:8080/api/employee/details/1
 
-
+Example 1:
 POST localhost:8080/api/employee/add
 
 Body > raw > JSON
@@ -18,3 +18,30 @@ Body > raw > JSON
 }
 
 DELETE localhost:8080/api/employee/delete/1
+
+
+..................................................................
+
+Example 2:
+POST localhost:8080/employee/add
+
+Body > raw > JSON
+[
+    {
+    "name" : "John",
+    "age" : 20,
+        "address": {
+            "city" : "Rome",
+            "type" : ""
+        }
+    },
+    {
+    "name" : "Tony",
+    "age" : 21,
+        "address": {
+            "city" : "Paris",
+            "type" : ""
+        }
+    }
+
+]
