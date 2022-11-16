@@ -1,7 +1,7 @@
 package com.example.demo.security;
 
-//@Configuration
-@EnableWebSecurity // <-- this has already a: @Configuration ...so we don't need to specify it again.
+@Configuration
+@EnableWebSecurity // <-- this has already a: @Configuration ...so we can also skip this: -> @Configuration
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 public class WebSecurityConfiguration {
 
