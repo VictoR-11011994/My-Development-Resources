@@ -13,7 +13,7 @@ response: Initialized empty Git repository in D:/Documenti/workspace - Java EE/v
 
 > git add *
 
-or ex: (> git add README.md)
+or example: (> git add README.md)
 
 > git commit -m "first commit"
 
