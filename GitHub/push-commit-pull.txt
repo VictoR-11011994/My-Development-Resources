@@ -1,6 +1,6 @@
 upload existing project...
 
-Go into your project folder > "right click" > Open on Terminal
+Go into your project folder > "right click" > Open on Terminal or Git Bash
 
 Terminal:
 
