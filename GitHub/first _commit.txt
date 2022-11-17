@@ -8,7 +8,7 @@ D:\Documents\workspace - Java EE\virtual-store-demo> git init
 
 > git init
 
-response: Initialized empty Git repository in D:/Documenti/workspace - Java EE/virtual-store-demo/.git/
+response: Initialized empty Git repository in D:/Documents/workspace - Java EE/virtual-store-demo/.git/
 
 
 > git add *
