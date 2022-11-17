@@ -7,23 +7,23 @@ Terminal:
 D:\Documents\workspace - Java EE\virtual-store-demo> git init
 
 > git init
-
+...
 response: Initialized empty Git repository in D:/Documents/workspace - Java EE/virtual-store-demo/.git/
 
-
 > git add *
-
+...
 or example: (> git add README.md)
 
 > git commit -m "first commit"
-
+...
 > git branch -M main
-
+...
 > git remote add origin https://github.com/MyGitAccountName/virtual-store-demo.git
-
+...
 > git push -u origin main
-
+...
 
 Example: if we added/created "README" file on github web directly and we wanna synchronize/import/update our local folder files then execute: git pull
 
 > git pull
+...
