@@ -1,0 +1,20 @@
+upload existing project...
+
+Go into your project folder > "right click" > Open on Terminal
+
+Terminal:
+
+D:\Documents\workspace - Java EE\virtual-store-demo> git init
+
+> git init
+
+response: Initialized empty Git repository in D:/Documenti/workspace - Java EE/virtual-store-demo/.git/
+
+
+> git add *
+
+or ex: (> git add README.md)
+
+> git commit -m "first commit"
+
+> git branch -M main
