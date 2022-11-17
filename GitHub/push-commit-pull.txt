@@ -8,7 +8,7 @@ D:\Documents\workspace - Java EE\virtual-store-demo> git init
 
 > git init
 ...
-response: Initialized empty Git repository in D:/Documents/workspace - Java EE/virtual-store-demo/.git/
+response example: Initialized empty Git repository in D:/Documents/workspace - Java EE/virtual-store-demo/.git/
 
 > git add *
 ...
@@ -27,3 +27,10 @@ Example: if we added/created "README" file or created new branch on github web d
 
 > git pull
 ...
+
+
+Example: switch to a new branch
+> git checkout branch_name
+...
+response example: Switched to a new branch 'development'
+branch 'development' set up to track 'origin/development'.
