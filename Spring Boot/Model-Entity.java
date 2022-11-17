@@ -13,6 +13,10 @@ import javax.persistence.Table;
 		      // on Windows using (MySQL Workbench) it will automatically create/recognize the data with "lowercase": "user"
 public class User {
 	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
+	
 	private String name;
 
 }
