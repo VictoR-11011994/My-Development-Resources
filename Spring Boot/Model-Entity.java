@@ -18,5 +18,10 @@ public class User {
 	private Long id;
 	
 	private String name;
+	
+	@Temporal(TemporalType.TIMESTAMP)
+	@Column(name = "creation_date") // if no name specified by default it will do the same thing on db (MySQL Workbench): creationDate -> creation_date
+	private Date creationDate;
+
 
 }
