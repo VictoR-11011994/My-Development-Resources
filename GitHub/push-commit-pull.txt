@@ -23,6 +23,7 @@ or example: (> git add README.md)
 > git push -u origin main
 ...
 
+
 Example: if we added/created "README" file or created new branch on github web directly and we wanna synchronize/import/update our local folder files then execute: git pull
 
 > git pull
@@ -35,3 +36,12 @@ Example: switch to a new branch
 response example: Switched to a new branch 'development'
 branch 'development' set up to track 'origin/development'.
 or response: Already on 'branch_name'
+
+
+Example: execute a commit
+1) check first in which branch are now
+> git checkout
+response: Your branch is up to date with 'origin/branch_name'.
+2) > git add *
+3) > git commit -m "updated"
+4) > git push
