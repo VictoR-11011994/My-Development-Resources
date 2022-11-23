@@ -34,3 +34,4 @@ Example: switch to a new branch
 ...
 response example: Switched to a new branch 'development'
 branch 'development' set up to track 'origin/development'.
+or response: Already on 'branch_name'
