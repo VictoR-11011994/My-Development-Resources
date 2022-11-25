@@ -4,9 +4,31 @@ package com.example.demo.security;
 @EnableWebSecurity // <-- this has already a: @Configuration ...so we can also skip this: -> @Configuration
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 public class WebSecurityConfiguration {
-
-// >> Deprecated
 	
+	
+	// Example:
+	@Autowired
+	private AccountAuthenticationProvider accountAuthenticationProvider;
+	
+	@Bean
+	public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+		AuthenticationManagerBuilder authenticationManagerBuilder = http.getSharedObject(AuthenticationManagerBuilder.class);
+		authenticationManagerBuilder.authenticationProvider(accountAuthenticationProvider);
+		
+		http.csrf().disable() // WARNING: .disable() ok for Test. not for Prod.
+		.authorizeRequests()
+		.antMatchers(HttpMethod.POST, "/api/account/**").permitAll()
+		.antMatchers("/**") // everything else
+		.authenticated()
+		.anyRequest().hasAnyRole("USER", "ADMIN")
+		.and()
+		.httpBasic(Customizer.withDefaults())
+		.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
+		return http.build();
+	}
+	
+
+// >> Deprecated	
 // ... extends WebSecurityConfigurerAdapter
         @Override
 	protected void configure(HttpSecurity http) throws Exception {
