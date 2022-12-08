@@ -1,3 +1,8 @@
+Setting Global Git Username and Email
+git config --global user.name "Your Name"
+git config --global user.email "email@mail.com"
+
+
 upload existing project...
 
 Go into your project folder > "right click" > Open on Terminal or Git Bash
