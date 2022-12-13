@@ -1,5 +1,5 @@
 Setting Global Git Username and Email
-git config --global user.name "Your User Name"
+git config --global user.name "Your UserName"
 git config --global user.email "email@mail.com"
 
 
