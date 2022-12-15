@@ -1,0 +1,19 @@
+Case 1: example: ...we see our function/method to load 2 times on page reload action...
+
+tested ok: react v18
+
+in: index.js
+...
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(
+  <App />
+);
+
+
+/* root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+ */
