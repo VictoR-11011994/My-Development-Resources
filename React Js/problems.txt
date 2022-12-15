@@ -1,6 +1,6 @@
 Case 1: example: ...we see our function/method to load 2 times on page reload action...
 
-tested ok: react v18
+tested on: react v18
 
 in: index.js
 ...
